@@ -19,20 +19,20 @@
     font-size: 22px;
     padding: 12px;
     position: absolute;
-    top: 40%; /* Set both at the same top position */
+    top: 42%; /* Set both at the same top position */
     left: 12px; /* Align it to the left */
     transform: translateY(-50%); /* Centers vertically based on its height */
     line-height: 100%;
   }
   
-  /* After image caption styling */
-  .after figcaption {
+
+  .aftershadow {
     color: white;
     font-weight: 900;
     font-size: 22px;
     padding: 12px;
     position: absolute;
-    top: 40%; /* Set both at the same top position to ensure they are parallel */
+    top: 20%; /* Set both at the same top position to ensure they are parallel */
     right: 12px; /* Align it to the right */
     transform: translateY(-50%); /* Centers vertically */
     line-height: 100%;
@@ -40,19 +40,22 @@
   
   /* Custom breakpoints for larger screens */
   @media (min-width: var(--screen-xl)) {
-    .after figcaption,
-    .before figcaption {
-      font-size: 24px;
-      padding: 16px;
+    .aftershadow {
+      top: 40%; 
     }
   }
-  
+    /* Custom breakpoints for larger screens */
+    @media (min-width: var(--screen-2xl)) {
+      .aftershadow {
+        top: 40%; 
+        padding-top: 200px;
+      }
+    }
+
   /* Custom breakpoints for smaller screens */
   @media (max-width: var(--screen-md)) {
-    .after figcaption,
-    .before figcaption {
-      font-size: 20px;
-      padding: 8px;
+    .aftershadow {
+      top: 40%; 
     }
   }
   

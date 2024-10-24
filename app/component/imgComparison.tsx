@@ -205,18 +205,44 @@ import "../assests/img_name.css";
 
 
 // Import images
-import BeforeImage1 from "../data/input_images/14.png";
-import AfterImage1 from "../data/output_images/14.png";
-import BeforeImage2 from "../data/input_images/16.png";
-import AfterImage2 from "../data/output_images/16.png";
-import BeforeImage3 from "../data/input_images/5.png";
-import AfterImage3 from "../data/output_images/5.png";
-import BeforeImage4 from "../data/input_images/4.png";
-import AfterImage4 from "../data/output_images/4.png";
-import BeforeImage5 from "../data/input_images/3.png";
-import AfterImage5 from "../data/output_images/3.png";
-import BeforeImage6 from "../data/input_images/2.png";
-import AfterImage6 from "../data/output_images/2.png";
+import BeforeImage1 from "../data/input_images/18.png";
+import AfterImage1 from "../data/output_images/18.png";
+import BeforeImage2 from "../data/input_images/19.png";
+import AfterImage2 from "../data/output_images/19.png";
+import BeforeImage3 from "../data/input_images/40.png";
+import AfterImage3 from "../data/output_images/40.png";
+import BeforeImage4 from "../data/input_images/47.png";
+import AfterImage4 from "../data/output_images/47.png";
+import BeforeImage5 from "../data/input_images/48.png";
+import AfterImage5 from "../data/output_images/48.png";
+import BeforeImage6 from "../data/input_images/86.png";
+import AfterImage6 from "../data/output_images/86.png";
+import BeforeImage7 from "../data/input_images/58.png";
+import AfterImage7 from "../data/output_images/58.png";
+import BeforeImage8 from "../data/input_images/63.png";
+import AfterImage8 from "../data/output_images/63.png";
+import BeforeImage9 from "../data/input_images/87.png";
+import AfterImage9 from "../data/output_images/87.png";
+import BeforeImage10 from "../data/input_images/69.png";
+import AfterImage10 from "../data/output_images/69.png";
+import BeforeImage11 from "../data/input_images/70.png";
+import AfterImage11 from "../data/output_images/70.png";
+import BeforeImage12 from "../data/input_images/72.png";
+import AfterImage12 from "../data/output_images/72.png";
+import BeforeImage13 from "../data/input_images/74.png";
+import AfterImage13 from "../data/output_images/74.png";
+import BeforeImage14 from "../data/input_images/75.png";
+import AfterImage14 from "../data/output_images/75.png";
+import BeforeImage15 from "../data/input_images/78.png";
+import AfterImage15 from "../data/output_images/78.png";
+import BeforeImage16 from "../data/input_images/80.png";
+import AfterImage16 from "../data/output_images/80.png";
+import BeforeImage17 from "../data/input_images/84.png";
+import AfterImage17 from "../data/output_images/84.png";
+import BeforeImage18 from "../data/input_images/56.png";
+import AfterImage18 from "../data/output_images/56.png";
+import BeforeImage19 from "../data/input_images/67.png";
+import AfterImage19 from "../data/output_images/67.png";
 
 
 
@@ -253,7 +279,7 @@ const ImgComparison = () => {
                         height={1440}
                         className="w-full h-full object-contain rounded-lg img1 relative" // Keep aspect ratio, no cropping
                     />
-                    <figcaption className="text-center">Shadow Image</figcaption>
+                    <figcaption className="text-center Beforeshadow">Shadow Image</figcaption>
                     </figure>
                     
                     {/* Second Image */}
@@ -280,6 +306,19 @@ const ImgComparison = () => {
                     { before: BeforeImage4, after: AfterImage4 },
                     { before: BeforeImage5, after: AfterImage5 },
                     { before: BeforeImage6, after: AfterImage6 },
+                    { before: BeforeImage7, after: AfterImage7 },
+                    { before: BeforeImage8, after: AfterImage8 },
+                    { before: BeforeImage9, after: AfterImage9 },
+                    { before: BeforeImage10, after: AfterImage10 },
+                    { before: BeforeImage11, after: AfterImage11 },
+                    { before: BeforeImage12, after: AfterImage12 },
+                    { before: BeforeImage13, after: AfterImage13 },
+                    { before: BeforeImage14, after: AfterImage14 },
+                    { before: BeforeImage15, after: AfterImage15 },
+                    { before: BeforeImage16, after: AfterImage16 },
+                    { before: BeforeImage17, after: AfterImage17 },
+                    { before: BeforeImage18, after: AfterImage18 },
+                    { before: BeforeImage19, after: AfterImage19 },
                 ].map((set, index) => (
                     <div 
                         key={index} 

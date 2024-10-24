@@ -28,7 +28,7 @@ export default function Header() {
   
           {/* Navigation Links */} 
           <nav className="hidden md:flex items-center ">
-          Cloud Shadow Removal: Input & Output Comparison 
+          AI Cloud Shadow Removal: Input & Output Comparison 
           </nav>
   
           {/* User Icon */}
