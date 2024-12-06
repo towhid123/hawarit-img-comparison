@@ -1,4 +1,4 @@
-// "use client"
+"use client"
 // import React, { useState } from 'react';
 // import { ImgComparisonSlider } from '@img-comparison-slider/react';
 // import Image from "next/image";
@@ -243,6 +243,14 @@ import BeforeImage18 from "../data/input_images/56.png";
 import AfterImage18 from "../data/output_images/56.png";
 import BeforeImage19 from "../data/input_images/67.png";
 import AfterImage19 from "../data/output_images/67.png";
+import BeforeImage20 from "../data/input_images/Screenshot 2024-12-06 153055.png";
+import AfterImage20 from "../data/output_images/Screenshot 2024-12-06 153055.png";
+import BeforeImage21 from "../data/input_images/2nd_image.png";
+import AfterImage21 from "../data/output_images/2nd_image.png";
+import BeforeImage22 from "../data/input_images/3rd_Image.png";
+import AfterImage22 from "../data/output_images/3rd_Image.png";
+import BeforeImage23 from "../data/input_images/4th_Image.png";
+import AfterImage23 from "../data/output_images/4th_Image.png";
 
 
 
@@ -263,41 +271,41 @@ const ImgComparison = () => {
         <div className="flex flex-col items-center p-4">
             {/* Header Section */}
 
-        
+
 
             {/* Image Comparison Slider */}
             <div className="relative w-full max-w-7xl mx-auto mb-1 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] 2xl:h-[750px]">
                 <ImgComparisonSlider className="absolute inset-0">
                     {/* First Image */}
                     <figure slot="first" className="before w-full h-full">
-                    <Image
-                        slot="first"
-                        src={beforeImage}
-                        alt="Before Image"
-                        layout="responsive"
-                        width={1440}
-                        height={1440}
-                        className="w-full h-full object-contain rounded-lg img1 relative" // Keep aspect ratio, no cropping
-                    />
-                    <figcaption className="text-center Beforeshadow">Shadow Image</figcaption>
+                        <Image
+                            slot="first"
+                            src={beforeImage}
+                            alt="Before Image"
+                            layout="responsive"
+                            width={1440}
+                            height={1440}
+                            className="w-full h-full object-contain rounded-lg img1 relative" // Keep aspect ratio, no cropping
+                        />
+                        {/* <figcaption className="text-center Beforeshadow">Shadow Image</figcaption> */}
                     </figure>
-                    
+
                     {/* Second Image */}
                     <figure slot="second" className="after w-full h-full">
-                    <Image
-                        slot="second"
-                        src={afterImage}
-                        alt="After Image"
-                        layout="responsive"
-                        width={1440}
-                        height={1440}
-                        className="w-full h-full object-contain rounded-lg relative" // Keep aspect ratio, no cropping
-                    />
-                    <figcaption className="text-center aftershadow">Shadow Free Image</figcaption>
+                        <Image
+                            slot="second"
+                            src={afterImage}
+                            alt="After Image"
+                            layout="responsive"
+                            width={1440}
+                            height={1440}
+                            className="w-full h-full object-contain rounded-lg relative" // Keep aspect ratio, no cropping
+                        />
+                        {/* <figcaption className="text-center aftershadow">Shadow Free Image</figcaption> */}
                     </figure>
                 </ImgComparisonSlider>
-                </div>
-                            {/* Thumbnail Image Gallery */}
+            </div>
+            {/* Thumbnail Image Gallery */}
             <div className="mt-8 flex justify-center flex-wrap gap-4">
                 {[
                     { before: BeforeImage1, after: AfterImage1 },
@@ -309,9 +317,9 @@ const ImgComparison = () => {
                     { before: BeforeImage7, after: AfterImage7 },
                     { before: BeforeImage8, after: AfterImage8 },
                     { before: BeforeImage9, after: AfterImage9 },
-                    { before: BeforeImage10, after: AfterImage10 },
-                    { before: BeforeImage11, after: AfterImage11 },
-                    { before: BeforeImage12, after: AfterImage12 },
+                    // { before: BeforeImage10, after: AfterImage10 },
+                    // { before: BeforeImage11, after: AfterImage11 },
+                    // { before: BeforeImage12, after: AfterImage12 },
                     { before: BeforeImage13, after: AfterImage13 },
                     { before: BeforeImage14, after: AfterImage14 },
                     { before: BeforeImage15, after: AfterImage15 },
@@ -319,20 +327,24 @@ const ImgComparison = () => {
                     { before: BeforeImage17, after: AfterImage17 },
                     { before: BeforeImage18, after: AfterImage18 },
                     { before: BeforeImage19, after: AfterImage19 },
+                    { before: BeforeImage20, after: AfterImage20 },
+                    { before: BeforeImage21, after: AfterImage21 },
+                    { before: BeforeImage22, after: AfterImage22 },
+                    { before: BeforeImage23, after: AfterImage23 },
                 ].map((set, index) => (
-                    <div 
-                        key={index} 
+                    <div
+                        key={index}
                         onClick={() => {
                             setBeforeImage(set.before);
                             setAfterImage(set.after);
-                        }} 
+                        }}
                         className="cursor-pointer p-1 border border-gray-300 hover:border-blue-500 rounded-md transition duration-200 ease-in-out"
                     >
-                        <Image 
-                            src={set.before} 
-                            alt={`Compare Set ${index + 1}`} 
-                            width={40} 
-                            height={15} 
+                        <Image
+                            src={set.before}
+                            alt={`Compare Set ${index + 1}`}
+                            width={40}
+                            height={15}
                             layout="fixed"
                             className="rounded-md hover:opacity-80 transition-opacity"
                         />
