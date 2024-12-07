@@ -249,8 +249,8 @@ import BeforeImage21 from "../data/input_images/2nd_image.png";
 import AfterImage21 from "../data/output_images/2nd_image.png";
 import BeforeImage22 from "../data/input_images/3rd_Image.png";
 import AfterImage22 from "../data/output_images/3rd_Image.png";
-import BeforeImage23 from "../data/input_images/4th_Image.png";
-import AfterImage23 from "../data/output_images/4th_Image.png";
+import BeforeImage23 from "../data/input_images/4th_image.png";
+import AfterImage23 from "../data/output_images/4th_image.png";
 
 
 
