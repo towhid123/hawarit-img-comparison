@@ -287,7 +287,7 @@ const ImgComparison = () => {
                             height={1440}
                             className="w-full h-full object-contain rounded-lg img1 relative" // Keep aspect ratio, no cropping
                         />
-                        {/* <figcaption className="text-center Beforeshadow">Shadow Image</figcaption> */}
+                        <figcaption className="text-center Beforeshadow">Shadow Image</figcaption>
                     </figure>
 
                     {/* Second Image */}
@@ -301,7 +301,7 @@ const ImgComparison = () => {
                             height={1440}
                             className="w-full h-full object-contain rounded-lg relative" // Keep aspect ratio, no cropping
                         />
-                        {/* <figcaption className="text-center aftershadow">Shadow Free Image</figcaption> */}
+                        <figcaption className="text-center aftershadow">Shadow Free Image</figcaption>
                     </figure>
                 </ImgComparisonSlider>
             </div>
