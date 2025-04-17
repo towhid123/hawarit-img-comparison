@@ -1,0 +1,61 @@
+:root {
+    /* Define custom breakpoints */
+    --screen-sm: 640px;
+    --screen-md: 768px;
+    --screen-lg: 1024px;
+    --screen-xl: 1280px;
+    --screen-2xl: 1440px;
+  }
+  
+  .before,
+  .after {
+    margin: 0;
+  }
+  
+  /* Before image caption styling */
+  .before figcaption {
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+    padding: 12px;
+    position: absolute;
+    top: 42%; /* Set both at the same top position */
+    left: 12px; /* Align it to the left */
+    transform: translateY(-50%); /* Centers vertically based on its height */
+    line-height: 100%;
+  }
+  
+
+  .aftershadow {
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+    padding: 12px;
+    position: absolute;
+    top: 20%; /* Set both at the same top position to ensure they are parallel */
+    right: 12px; /* Align it to the right */
+    transform: translateY(-50%); /* Centers vertically */
+    line-height: 100%;
+  }
+  
+  /* Custom breakpoints for larger screens */
+  @media (min-width: var(--screen-xl)) {
+    .aftershadow {
+      top: 40%; 
+    }
+  }
+    /* Custom breakpoints for larger screens */
+    @media (min-width: var(--screen-2xl)) {
+      .aftershadow {
+        top: 40%; 
+        padding-top: 200px;
+      }
+    }
+
+  /* Custom breakpoints for smaller screens */
+  @media (max-width: var(--screen-md)) {
+    .aftershadow {
+      top: 40%; 
+    }
+  }
+  
