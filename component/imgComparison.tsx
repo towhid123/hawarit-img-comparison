@@ -211,24 +211,10 @@ import BeforeImage2 from "../data/input_images/19.png";
 import AfterImage2 from "../data/output_images/19.png";
 import BeforeImage3 from "../data/input_images/40.png";
 import AfterImage3 from "../data/output_images/40.png";
-import BeforeImage4 from "../data/input_images/47.png";
-import AfterImage4 from "../data/output_images/47.png";
-import BeforeImage5 from "../data/input_images/48.png";
-import AfterImage5 from "../data/output_images/48.png";
-import BeforeImage6 from "../data/input_images/86.png";
-import AfterImage6 from "../data/output_images/86.png";
-import BeforeImage7 from "../data/input_images/58.png";
-import AfterImage7 from "../data/output_images/58.png";
 import BeforeImage8 from "../data/input_images/63.png";
 import AfterImage8 from "../data/output_images/63.png";
 import BeforeImage9 from "../data/input_images/87.png";
 import AfterImage9 from "../data/output_images/87.png";
-import BeforeImage10 from "../data/input_images/69.png";
-import AfterImage10 from "../data/output_images/69.png";
-import BeforeImage11 from "../data/input_images/70.png";
-import AfterImage11 from "../data/output_images/70.png";
-import BeforeImage12 from "../data/input_images/72.png";
-import AfterImage12 from "../data/output_images/72.png";
 import BeforeImage13 from "../data/input_images/74.png";
 import AfterImage13 from "../data/output_images/74.png";
 import BeforeImage14 from "../data/input_images/75.png";
@@ -321,15 +307,8 @@ const ImgComparison = () => {
                     { before: BeforeImage1, after: AfterImage1 },
                     { before: BeforeImage2, after: AfterImage2 },
                     { before: BeforeImage3, after: AfterImage3 },
-                    // { before: BeforeImage4, after: AfterImage4 },
-                    // { before: BeforeImage5, after: AfterImage5 },
-                    // { before: BeforeImage6, after: AfterImage6 },
-                    // { before: BeforeImage7, after: AfterImage7 },
                     { before: BeforeImage8, after: AfterImage8 },
                     { before: BeforeImage9, after: AfterImage9 },
-                    // { before: BeforeImage10, after: AfterImage10 },
-                    // { before: BeforeImage11, after: AfterImage11 },
-                    // { before: BeforeImage12, after: AfterImage12 },
                     { before: BeforeImage13, after: AfterImage13 },
                     { before: BeforeImage14, after: AfterImage14 },
                     { before: BeforeImage15, after: AfterImage15 },

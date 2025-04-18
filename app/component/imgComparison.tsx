@@ -211,14 +211,6 @@ import BeforeImage2 from "../data/input_images/19.png";
 import AfterImage2 from "../data/output_images/19.png";
 import BeforeImage3 from "../data/input_images/40.png";
 import AfterImage3 from "../data/output_images/40.png";
-import BeforeImage4 from "../data/input_images/47.png";
-import AfterImage4 from "../data/output_images/47.png";
-import BeforeImage5 from "../data/input_images/48.png";
-import AfterImage5 from "../data/output_images/48.png";
-import BeforeImage6 from "../data/input_images/86.png";
-import AfterImage6 from "../data/output_images/86.png";
-import BeforeImage7 from "../data/input_images/58.png";
-import AfterImage7 from "../data/output_images/58.png";
 import BeforeImage8 from "../data/input_images/63.png";
 import AfterImage8 from "../data/output_images/63.png";
 import BeforeImage9 from "../data/input_images/87.png";
@@ -245,6 +237,17 @@ import BeforeImage22 from "../data/input_images/3rd_Image.png";
 import AfterImage22 from "../data/output_images/3rd_Image.png";
 import BeforeImage23 from "../data/input_images/4th_image.png";
 import AfterImage23 from "../data/output_images/4th_image.png";
+import BeforeImage24 from "../data/input_images/original_1st.jpg";
+import AfterImage24 from "../data/output_images/k_output_1st.jpg";
+import BeforeImage25 from "../data/input_images/original_2nd.jpg";
+import AfterImage25 from "../data/output_images/k_output_2nd.jpg";
+import BeforeImage26 from "../data/input_images/original_3rd.jpg";
+import AfterImage26 from "../data/output_images/k_output_3rd.jpg";
+import BeforeImage27 from "../data/input_images/original_4th.jpg";
+import AfterImage27 from "../data/output_images/k_output_4th.jpg";
+import BeforeImage28 from "../data/input_images/original_2nd_1.jpg";
+import AfterImage28 from "../data/output_images/k_output_2nd(4th run).jpg";
+
 
 
 
@@ -305,15 +308,8 @@ const ImgComparison = () => {
                     { before: BeforeImage1, after: AfterImage1 },
                     { before: BeforeImage2, after: AfterImage2 },
                     { before: BeforeImage3, after: AfterImage3 },
-                    { before: BeforeImage4, after: AfterImage4 },
-                    { before: BeforeImage5, after: AfterImage5 },
-                    { before: BeforeImage6, after: AfterImage6 },
-                    { before: BeforeImage7, after: AfterImage7 },
                     { before: BeforeImage8, after: AfterImage8 },
                     { before: BeforeImage9, after: AfterImage9 },
-                    // { before: BeforeImage10, after: AfterImage10 },
-                    // { before: BeforeImage11, after: AfterImage11 },
-                    // { before: BeforeImage12, after: AfterImage12 },
                     { before: BeforeImage13, after: AfterImage13 },
                     { before: BeforeImage14, after: AfterImage14 },
                     { before: BeforeImage15, after: AfterImage15 },
@@ -325,6 +321,11 @@ const ImgComparison = () => {
                     { before: BeforeImage21, after: AfterImage21 },
                     { before: BeforeImage22, after: AfterImage22 },
                     { before: BeforeImage23, after: AfterImage23 },
+                    { before: BeforeImage24, after: AfterImage24 },
+                    { before: BeforeImage25, after: AfterImage25 },
+                    { before: BeforeImage26, after: AfterImage26 },
+                    { before: BeforeImage27, after: AfterImage27 },
+                    { before: BeforeImage28, after: AfterImage28 },
                 ].map((set, index) => (
                     <div
                         key={index}
@@ -340,7 +341,7 @@ const ImgComparison = () => {
                             width={40}
                             height={15}
                             layout="fixed"
-                            className="rounded-md hover:opacity-80 transition-opacity"
+                            className="object-contain w-full h-full rounded-sm hover:opacity-80 transition-opacity"
                         />
                     </div>
                 ))}
