@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 // import React, { useState } from 'react';
 // import { ImgComparisonSlider } from '@img-comparison-slider/react';
 // import Image from "next/image";
@@ -340,7 +340,7 @@ const ImgComparison = () => {
                             alt={`Compare Set ${index + 1}`}
                             width={40}
                             height={15}
-                            className="object-contain w-full h-full rounded-sm hover:opacity-80 transition-opacity"
+                            className="object-contain rounded-sm hover:opacity-80 transition-opacity"
                         />
                     </div>
                 ))}

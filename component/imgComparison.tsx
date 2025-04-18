@@ -340,7 +340,7 @@ const ImgComparison = () => {
                             width={30}
                             height={15}
                             // layout="fixed"
-                            className="object-contain w-full h-full rounded-sm hover:opacity-80 transition-opacity"
+                            className="object-contain rounded-sm hover:opacity-80 transition-opacity"
                         />
                     </div>
                 ))}
