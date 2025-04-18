@@ -340,7 +340,6 @@ const ImgComparison = () => {
                             alt={`Compare Set ${index + 1}`}
                             width={40}
                             height={15}
-                            layout="fixed"
                             className="object-contain w-full h-full rounded-sm hover:opacity-80 transition-opacity"
                         />
                     </div>
