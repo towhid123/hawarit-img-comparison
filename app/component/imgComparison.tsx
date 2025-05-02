@@ -205,30 +205,7 @@ import "../assests/img_name.css";
 
 
 // Import images
-import BeforeImage1 from "../data/input_images/18.png";
-import AfterImage1 from "../data/output_images/18.png";
-import BeforeImage2 from "../data/input_images/19.png";
-import AfterImage2 from "../data/output_images/19.png";
-import BeforeImage3 from "../data/input_images/40.png";
-import AfterImage3 from "../data/output_images/40.png";
-import BeforeImage8 from "../data/input_images/63.png";
-import AfterImage8 from "../data/output_images/63.png";
-import BeforeImage9 from "../data/input_images/87.png";
-import AfterImage9 from "../data/output_images/87.png";
-import BeforeImage13 from "../data/input_images/74.png";
-import AfterImage13 from "../data/output_images/74.png";
-import BeforeImage14 from "../data/input_images/75.png";
-import AfterImage14 from "../data/output_images/75.png";
-import BeforeImage15 from "../data/input_images/78.png";
-import AfterImage15 from "../data/output_images/78.png";
-import BeforeImage16 from "../data/input_images/80.png";
-import AfterImage16 from "../data/output_images/80.png";
-import BeforeImage17 from "../data/input_images/84.png";
-import AfterImage17 from "../data/output_images/84.png";
-import BeforeImage18 from "../data/input_images/56.png";
-import AfterImage18 from "../data/output_images/56.png";
-import BeforeImage19 from "../data/input_images/67.png";
-import AfterImage19 from "../data/output_images/67.png";
+
 import BeforeImage20 from "../data/input_images/original_1st_resized.jpg";
 import AfterImage20 from "../data/output_images/enhanced_original_1st_(4096, 5492).jpg";
 import BeforeImage21 from "../data/input_images/original_2nd_resized.jpg";
@@ -237,43 +214,127 @@ import BeforeImage22 from "../data/input_images/original_3rd_resized.jpg";
 import AfterImage22 from "../data/output_images/enhanced_original_3rd_(4096, 5492).jpg";
 import BeforeImage23 from "../data/input_images/original_4th_resized.jpg";
 import AfterImage23 from "../data/output_images/enhanced_original_4th_(5492,4096).jpg";
-import BeforeImage24 from "../data/input_images/original_1st.jpg";
-import AfterImage24 from "../data/output_images/k_output_1st.jpg";
-import BeforeImage25 from "../data/input_images/original_2nd.jpg";
-import AfterImage25 from "../data/output_images/k_output_2nd.jpg";
-import BeforeImage26 from "../data/input_images/original_3rd.jpg";
-import AfterImage26 from "../data/output_images/k_output_3rd.jpg";
-import BeforeImage27 from "../data/input_images/original_4th.jpg";
-import AfterImage27 from "../data/output_images/k_output_4th.jpg";
-import BeforeImage28 from "../data/input_images/original_2nd_1.jpg";
-import AfterImage28 from "../data/output_images/k_output_2nd(4th run).jpg";
+import BeforeImage24 from "../data/input_images/original_1st_resized.jpg";
+import AfterImage24 from "../data/output_images/k_output_1st_resized.jpg";
+import BeforeImage25 from "../data/input_images/original_2nd_resized.jpg";
+import AfterImage25 from "../data/output_images/k_output_2nd_resized.jpg";
+import BeforeImage26 from "../data/input_images/original_3rd_resized.jpg";
+import AfterImage26 from "../data/output_images/k_output_3rd_resized.jpg";
+import BeforeImage27 from "../data/input_images/original_4th_resized.jpg";
+import AfterImage27 from "../data/output_images/k_output_4th_resized.jpg";
 
 
 
 
 
+
+// const ImgComparison = () => {
+
+
+
+
+//     // State to manage current images
+//     const [beforeImage, setBeforeImage] = useState(BeforeImage20);
+//     const [afterImage, setAfterImage] = useState(AfterImage20);
+//     // const [beforeImage, setBeforeImage] = useState("https://via.placeholder.com/1440x1440");
+//     // const [afterImage, setAfterImage] = useState("https://via.placeholder.com/1440x1440");
+
+//     return (
+//         <div className="flex flex-col items-center p-4">
+//             {/* Header Section */}
+
+
+
+//             {/* Image Comparison Slider */}
+//             <div className="relative w-full max-w-7xl mx-auto mb-1 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] 2xl:h-[750px]">
+//                 <ImgComparisonSlider className="absolute inset-0">
+//                     {/* First Image */}
+//                     <figure slot="first" className="before w-full h-full">
+//                         <Image
+//                             slot="first"
+//                             src={beforeImage}
+//                             alt="Before Image"
+//                             layout="responsive"
+//                             width={1440}
+//                             height={1440}
+//                             className="w-full h-full object-contain rounded-lg img1 relative" // Keep aspect ratio, no cropping
+//                         />
+//                         <figcaption className="text-center Beforeshadow">Shadow Image</figcaption>
+//                     </figure>
+
+//                     {/* Second Image */}
+//                     <figure slot="second" className="after w-full h-full">
+//                         <Image
+//                             slot="second"
+//                             src={afterImage}
+//                             alt="After Image"
+//                             layout="responsive"
+//                             width={1440}
+//                             height={1440}
+//                             className="w-full h-full object-contain rounded-lg relative" // Keep aspect ratio, no cropping
+//                         />
+//                         <figcaption className="text-center aftershadow">Shadow Free Image</figcaption>
+//                     </figure>
+//                 </ImgComparisonSlider>
+//             </div>
+//             {/* Thumbnail Image Gallery */}
+//             <div className="mt-8 flex justify-center flex-wrap gap-4">
+//                 {[
+//                     { before: BeforeImage20, after: AfterImage20 },
+//                     { before: BeforeImage21, after: AfterImage21 },
+//                     { before: BeforeImage22, after: AfterImage22 },
+//                     { before: BeforeImage23, after: AfterImage23 },
+//                     { before: BeforeImage24, after: AfterImage24 },
+//                     { before: BeforeImage25, after: AfterImage25 },
+//                     { before: BeforeImage26, after: AfterImage26 },
+//                     { before: BeforeImage27, after: AfterImage27 },
+//                 ].map((set, index) => (
+//                     <div
+//                         key={index}
+//                         onClick={() => {
+//                             setBeforeImage(set.before);
+//                             setAfterImage(set.after);
+//                         }}
+//                         className="cursor-pointer p-1 border border-gray-300 hover:border-blue-500 rounded-md transition duration-200 ease-in-out"
+//                     >
+//                         <Image
+//                             src={set.before}
+//                             alt={`Compare Set ${index + 1}`}
+//                             width={40}
+//                             height={15}
+//                             className="object-contain rounded-sm hover:opacity-80 transition-opacity"
+//                         />
+//                     </div>
+//                 ))}
+//             </div>
+//         </div>
+//     );
+// }
+
+const imageSets = [
+    { name: "Image 1-HawarIT AI Enhanced Output", before: BeforeImage20, after: AfterImage20 },
+    { name: "Image 2-HawarIT AI Enhanced Output", before: BeforeImage21, after: AfterImage21 },
+    { name: "Image 3-HawarIT AI Enhanced Output", before: BeforeImage22, after: AfterImage22 },
+    { name: "Image 4-HawarIT AI Enhanced Output", before: BeforeImage23, after: AfterImage23 },
+    { name: "Image 1-Fast-video Shadow Removal Output", before: BeforeImage24, after: AfterImage24 },
+    { name: "Image 2-Fast-video Shadow Removal Output", before: BeforeImage25, after: AfterImage25 },
+    { name: "Image 3-Fast-video Shadow Removal Output", before: BeforeImage26, after: AfterImage26 },
+    { name: "Image 4-Fast-video Shadow Removal Output", before: BeforeImage27, after: AfterImage27 },
+];
 
 const ImgComparison = () => {
-
-
-
-
-    // State to manage current images
-    const [beforeImage, setBeforeImage] = useState(BeforeImage1);
-    const [afterImage, setAfterImage] = useState(AfterImage1);
-    // const [beforeImage, setBeforeImage] = useState("https://via.placeholder.com/1440x1440");
-    // const [afterImage, setAfterImage] = useState("https://via.placeholder.com/1440x1440");
+    const [beforeImage, setBeforeImage] = useState(BeforeImage20);
+    const [afterImage, setAfterImage] = useState(AfterImage20);
+    const [selectedImageName, setSelectedImageName] = useState("Image 1-HawarIT AI Enhanced Output");
 
     return (
         <div className="flex flex-col items-center p-4">
-            {/* Header Section */}
-
-
+            {/* Image name header */}
+            <h2 className="text-lg font-semibold text-center mb-4">{selectedImageName}</h2>
 
             {/* Image Comparison Slider */}
             <div className="relative w-full max-w-7xl mx-auto mb-1 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] 2xl:h-[750px]">
                 <ImgComparisonSlider className="absolute inset-0">
-                    {/* First Image */}
                     <figure slot="first" className="before w-full h-full">
                         <Image
                             slot="first"
@@ -282,12 +343,10 @@ const ImgComparison = () => {
                             layout="responsive"
                             width={1440}
                             height={1440}
-                            className="w-full h-full object-contain rounded-lg img1 relative" // Keep aspect ratio, no cropping
+                            className="w-full h-full object-contain rounded-lg img1 relative"
                         />
                         <figcaption className="text-center Beforeshadow">Shadow Image</figcaption>
                     </figure>
-
-                    {/* Second Image */}
                     <figure slot="second" className="after w-full h-full">
                         <Image
                             slot="second"
@@ -296,42 +355,22 @@ const ImgComparison = () => {
                             layout="responsive"
                             width={1440}
                             height={1440}
-                            className="w-full h-full object-contain rounded-lg relative" // Keep aspect ratio, no cropping
+                            className="w-full h-full object-contain rounded-lg relative"
                         />
                         <figcaption className="text-center aftershadow">Shadow Free Image</figcaption>
                     </figure>
                 </ImgComparisonSlider>
             </div>
-            {/* Thumbnail Image Gallery */}
+
+            {/* Thumbnail Gallery */}
             <div className="mt-8 flex justify-center flex-wrap gap-4">
-                {[
-                    { before: BeforeImage1, after: AfterImage1 },
-                    { before: BeforeImage2, after: AfterImage2 },
-                    { before: BeforeImage3, after: AfterImage3 },
-                    { before: BeforeImage8, after: AfterImage8 },
-                    { before: BeforeImage9, after: AfterImage9 },
-                    { before: BeforeImage13, after: AfterImage13 },
-                    { before: BeforeImage14, after: AfterImage14 },
-                    { before: BeforeImage15, after: AfterImage15 },
-                    { before: BeforeImage16, after: AfterImage16 },
-                    { before: BeforeImage17, after: AfterImage17 },
-                    { before: BeforeImage18, after: AfterImage18 },
-                    { before: BeforeImage19, after: AfterImage19 },
-                    { before: BeforeImage20, after: AfterImage20 },
-                    { before: BeforeImage21, after: AfterImage21 },
-                    { before: BeforeImage22, after: AfterImage22 },
-                    { before: BeforeImage23, after: AfterImage23 },
-                    { before: BeforeImage24, after: AfterImage24 },
-                    { before: BeforeImage25, after: AfterImage25 },
-                    { before: BeforeImage26, after: AfterImage26 },
-                    { before: BeforeImage27, after: AfterImage27 },
-                    { before: BeforeImage28, after: AfterImage28 },
-                ].map((set, index) => (
+                {imageSets.map((set, index) => (
                     <div
                         key={index}
                         onClick={() => {
                             setBeforeImage(set.before);
                             setAfterImage(set.after);
+                            setSelectedImageName(set.name);
                         }}
                         className="cursor-pointer p-1 border border-gray-300 hover:border-blue-500 rounded-md transition duration-200 ease-in-out"
                     >
@@ -348,5 +387,6 @@ const ImgComparison = () => {
         </div>
     );
 }
+
 
 export default ImgComparison;
